@@ -70,6 +70,10 @@
         Reply: You only need to copy and paste this code into the section you want it displayed on your website. Websites like "wordpress" have the "shortcode" options.
         */
         
+        Echo "<section>";
+        Echo '<img src="img/usa.png" alt="Country Flag">'; // You can change "img/usa.png" to any image source you want displayed, the correct image sizing is 200x105.
+        Echo '<h1><span style=""><b>US SERVERS</b></span></h1>'; // You can change this text to anything you want displayed as the first header.
+        Echo "<h3>Server Name Heading H3</h3>"; // You can change this text to anything you want displayed as the second header.
         Echo "<b> Server Type</b>: $serverType"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
 		Echo "<b> Server ID</b>: $serverId"; // This will grab the formatted JSON data and display the results inside this section.
