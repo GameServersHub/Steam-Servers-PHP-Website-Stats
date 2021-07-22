@@ -22,9 +22,11 @@ Have you ever wanted to display in-game stats directly on your website without t
 
 # F.A.Q.
 Q: How does this PHP system work?
+
 A: This system was designed to be user-friendly for beginners and advanced members; this system works by grabbing JSON data from popular API sites for video game communities. The PHP script itself will decode the API JSON responses. It directly changes it to a lightweight readable format; this is designed to give the users complete control over what data they want to display on their websites. The open-source files are exclusively intended to be as lightweight and straightforward as possible while still providing the user's complete control over how they want the data displayed on their websites.
 
 Q: Does this require any coding knowledge to set up?
+
 A: Nope! This is designed to be a simple copy/paste or drag/drop setup; you don't need any coding knowledge to begin using this PHP script. You replace the "ServerKey" with your game server key, and then you drag/drop or copy/paste the PHP script directly into your website. No coding is required at all, and everything is written out in great detail, explaining how each function works to provide you the ease of access.
 
 # Battlemetrics Website Features
