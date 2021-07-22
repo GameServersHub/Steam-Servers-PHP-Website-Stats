@@ -88,13 +88,13 @@
         Echo "<br>";
         Echo "<b> Server Ranking</b>: $serverRank"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b> Server Location</b>: $serverLocation"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b> Server Location</b>: [$serverLocation[0]]"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
         Echo "<b> Server Online Status</b>: $serverStatus"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b> Server ModIDS</b>: $serverModIds"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b> Server ModIDS</b>: [$serverModIds[0]]"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b> Server Mod Hashes</b>: $serverModHashes"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b> Server Mod Hashes</b>: [$serverModHashes[0]]"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
         Echo "<b> Server Map</b>: $serverMap"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
@@ -106,7 +106,7 @@
         Echo "<br>";
         Echo "<b> Server Gamemode Status</b>: $serverGamemode"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b> Server Mod Names</b>: $serverModNames"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b> Server Mod Names</b>: [$serverModNames[0]]"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
         Echo "<b> Server PVE Status</b>: $serverPve"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
