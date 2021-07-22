@@ -18,7 +18,7 @@
         increase the website traffic you get, and it provides an incentive for players to use your website
         when you offer custom features such as this addon! This "PHP" script was created by https://gameservershub.com/forums/ (CEO: MrOwlSky)
         
-        Style version: Style01
+        Style version: Style02
         Open Source Link: https://github.com/GameServersHub
         */
         $url = file_get_contents("https://toparkservers.com/api/serverdetails/ServerKey"); // Replace "ServerKey" with your own dedicated server key from TopArkServers.
@@ -61,20 +61,20 @@
         Echo "<b>Server Display IP</b>: $serverIp"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
         Echo "<b>Server Query Port</b>: $serverQueryPort"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo "<br>";
-            Echo "<b>Server Game Port</b>: $serverGamePort"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo "<br>";
-            Echo "<b>Server Map</b>: $serverMapName"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo "<br>";
-            Echo "<b>Server Status</b>: $serverStatus"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo "<br>";
-            Echo "<b>Server Online Players</b>: $serverOnlinePlayers / $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo "<br>";
-            Echo "<b>Server Total Players</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo "<br>";
-            Echo "<b>Server Total Votes</b>: $serverVotes"; // This will grab the formatted JSON data and display the results inside this section.
-            Echo '<button style="display: none;">Click me!</button>';
-            Echo "</section>";
+        Echo "<br>";
+        Echo "<b>Server Game Port</b>: $serverGamePort"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<br>";
+        Echo "<b>Server Map</b>: $serverMapName"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<br>";
+        Echo "<b>Server Status</b>: $serverStatus"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<br>";
+        Echo "<b>Server Online Players</b>: $serverOnlinePlayers / $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<br>";
+        Echo "<b>Server Total Players</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<br>";
+        Echo "<b>Server Total Votes</b>: $serverVotes"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo '<button style="display: none;">Click me!</button>';
+        Echo "</section>";
         ?>
     </body>
 </html>
