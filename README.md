@@ -21,6 +21,7 @@ Have you ever wanted to display in-game stats directly on your website without t
 4. That's it! Enjoy the stats!
 
 # Battlemetrics Website Features
+These features below allow you to display any of these data stats directly on your website using the API provided by "Battlemetrics".
 * Supports Game Type
 * Supports Server ID
 * Supports Server Name
@@ -53,6 +54,7 @@ Have you ever wanted to display in-game stats directly on your website without t
 * Supports Server Query Status
 
 # TopArkServers Website Features
+These features below allow you to display any of these data stats directly on your website using the API provided by "TopArkServers".
 * Supports Vote Rewards Tracking
 * Supports Online Player Counter
 * Supports Minimal Total Players Counter
