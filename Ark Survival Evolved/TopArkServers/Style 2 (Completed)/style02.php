@@ -68,9 +68,9 @@
         Echo "<br>";
         Echo "<b>Server Status</b>: $serverStatus"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b>Server Online Players</b>: $serverOnlinePlayers / $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b>Server Online Players</b>: $serverOnlinePlayers | $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b>Server Total Players</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b>Server Max Slots</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
         Echo "<b>Server Total Votes</b>: $serverVotes"; // This will grab the formatted JSON data and display the results inside this section.
         Echo '<button style="display: none;">Click me!</button>';

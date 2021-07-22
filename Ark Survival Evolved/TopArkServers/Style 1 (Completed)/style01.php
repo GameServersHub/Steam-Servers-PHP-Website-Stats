@@ -51,7 +51,7 @@ Question: How do I add this to my current website?
 Reply: You only need to copy and paste this code into the section you want it displayed on your website. Websites like "wordpress" have the "shortcode" options.
 */
 
-echo "Server ID: $serverId || Server Name: $serverName || Server Display IP: $serverIp || Server Query Port: $serverQueryPort || Server Game Port: $serverGamePort || Server Map: $serverMapName || Server Status: $serverStatus || Server Online Players: $serverOnlinePlayers || Server Total Players: $serverMaxPlayers || Server Total Votes: $serverVotes ||"; // This will display the online total players starting from a minimal of 0.
+echo "Server ID: $serverId || Server Name: $serverName || Server Display IP: $serverIp || Server Query Port: $serverQueryPort || Server Game Port: $serverGamePort || Server Map: $serverMapName || Server Status: $serverStatus || Server Online Players: $serverOnlinePlayers/$serverMaxPlayers || Server Max Slots: $serverMaxPlayers || Server Total Votes: $serverVotes ||"; // This will display the online total players starting from a minimal of 0.
 ?>
 
 </body>

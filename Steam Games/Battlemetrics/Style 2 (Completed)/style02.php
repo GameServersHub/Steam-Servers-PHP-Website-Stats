@@ -86,9 +86,9 @@
         Echo "<br>";
         Echo "<b> Server Game Port</b>: $serverPort"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b> Server Online Players</b>: $serverPlayers"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b> Server Online Players</b>: $serverPlayers | $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
-        Echo "<b> Server Total Players</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
+        Echo "<b> Server Max Slots</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
         Echo "<b> Server Ranking</b>: $serverRank"; // This will grab the formatted JSON data and display the results inside this section.
         Echo "<br>";
