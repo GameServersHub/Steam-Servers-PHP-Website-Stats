@@ -104,7 +104,12 @@
         <b> Server International Time</b>: <?php echo $serverTimeI; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Official Status</b>: <?php echo $serverOfficial; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Gamemode Status</b>: <?php echo $serverGamemode; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Mod Names</b>: [<?php echo $serverModNames[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Mod Names</b>:  <!-- This will create an array of mod names in a listing format structure (Special credit to Vas). -->
+        <div class="col-lg-4">
+        <?php foreach ($serverModNames as $modNames):?>
+              <li><?php echo $modNames; ?></li>
+        <?php endforeach ?>
+        </div>
         <b> Server PVE Status</b>: <?php echo $serverPve; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Modded Status</b>: <?php echo $serverModded; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Crossplay Status</b>: <?php echo $serverCrossplay; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
