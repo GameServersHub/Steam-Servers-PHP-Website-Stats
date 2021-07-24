@@ -70,70 +70,41 @@
         Reply: You only need to copy and paste this code into the section you want it displayed on your website. Websites like "wordpress" have the "shortcode" options.
         */
         
-        Echo "<section>";
-        Echo '<img src="img/usa.png" alt="Country Flag">'; // You can change "img/usa.png" to any image source you want displayed, the correct image sizing is 200x105.
-        Echo '<h1><span style=""><b>US SERVERS</b></span></h1>'; // You can change this text to anything you want displayed as the first header.
-        Echo "<h3>Server Name Heading H3</h3>"; // You can change this text to anything you want displayed as the second header.
-        Echo "<b> Server Type</b>: $serverType"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-		Echo "<b> Server ID</b>: $serverId"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Name</b>: $serverName"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Address</b>: $serverAddress"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server IP</b>: $serverIp"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Game Port</b>: $serverPort"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Online Players</b>: $serverPlayers | $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Max Slots</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Ranking</b>: $serverRank"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Location</b>: [$serverLocation[0]]"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Online Status</b>: $serverStatus"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server ModIDS</b>: [$serverModIds[0]]"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Mod Hashes</b>: [$serverModHashes[0]]"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Map</b>: $serverMap"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Local Time</b>: $serverTime"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server International Time</b>: $serverTimeI"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Official Status</b>: $serverOfficial"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Gamemode Status</b>: $serverGamemode"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Mod Names</b>: [$serverModNames[0]]"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server PVE Status</b>: $serverPve"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Modded Status</b>: $serverModded"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Crossplay Status</b>: $serverCrossplay"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Session Flags</b>: $serverSessionFlags"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Owner SteamID</b>: $serverSteamId"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Password Protected</b>: $serverPrivate"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Creation Date</b>: $serverCreatedAt"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Last Update Date</b>: $serverUpdatedAt"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Query Port</b>: $serverPortQuery"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Country</b>: $serverCountry"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b> Server Query Status</b>: $serverQueryStatus"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
         ?>
+
+        <section>
+        <img src="img/usa.png" alt="Country Flag"> <!-- You can change "img/usa.png" to any image source you want displayed, the correct image sizing is 200x105. -->
+        <h1><span style=""><b>US SERVERS</b></span></h1> <!-- You can change this text to anything you want displayed as the first header. -->
+        <h3>Server Name Heading H3</h3> <!-- You can change this text to anything you want displayed as the second header. -->
+        <b> Server Type</b>: <?php echo $serverType; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+		<b> Server ID</b>: <?php echo $serverId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Name</b>: <?php echo $serverName; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Address</b>: <?php echo $serverAddress; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server IP</b>: <?php echo $serverIp; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Game Port</b>: <?php echo $serverPort; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Online Players</b>: <?php echo $serverPlayers; ?> | <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Max Slots</b>: <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Ranking</b>: <?php echo $serverRank; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Location</b>: [<?php echo $serverLocation[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Online Status</b>: <?php echo $serverStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server ModIDS</b>: [<?php echo $serverModIds[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Mod Hashes</b>: [<?php echo $serverModHashes[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Map</b>: <?php echo $serverMap; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Local Time</b>: <?php echo $serverTime; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server International Time</b>: <?php echo $serverTimeI; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Official Status</b>: <?php echo $serverOfficial; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Gamemode Status</b>: <?php echo $serverGamemode; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Mod Names</b>: [<?php echo $serverModNames[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server PVE Status</b>: <?php echo $serverPve; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Modded Status</b>: <?php echo $serverModded; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Crossplay Status</b>: <?php echo $serverCrossplay; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Session Flags</b>: <?php echo $serverSessionFlags; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Owner SteamID</b>: <?php echo $serverSteamId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Password Protected</b>: <?php echo $serverPrivate; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Creation Date</b>: <?php echo $serverCreatedAt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Last Update Date</b>: <?php echo $serverUpdatedAt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Query Port</b>: <?php echo $serverPortQuery; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Country</b>: <?php echo $serverCountry; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Query Status</b>: <?php echo $serverQueryStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
     </body>
 </html>

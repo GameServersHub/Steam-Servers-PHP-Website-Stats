@@ -49,32 +49,24 @@
         Question: How do I add this to my current website?
         Reply: You only need to copy and paste this code into the section you want it displayed on your website. Websites like "wordpress" have the "shortcode" options.
         */
-        
-        Echo "<section>";
-        Echo '<img src="img/usa.png" alt="Country Flag">'; // You can change "img/usa.png" to any image source you want displayed, the correct image sizing is 200x105.
-        Echo '<h1><span style=""><b>US SERVERS</b></span></h1>'; // You can change this text to anything you want displayed as the first header.
-        Echo "<h3>Server Name Heading H3</h3>"; // You can change this text to anything you want displayed as the second header.
-        Echo "<b> Server ID</b>: $serverId"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Name</b>: $serverName"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Display IP</b>: $serverIp"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Query Port</b>: $serverQueryPort"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Game Port</b>: $serverGamePort"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Map</b>: $serverMapName"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Status</b>: $serverStatus"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Online Players</b>: $serverOnlinePlayers | $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Max Slots</b>: $serverMaxPlayers"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo "<br>";
-        Echo "<b>Server Total Votes</b>: $serverVotes"; // This will grab the formatted JSON data and display the results inside this section.
-        Echo '<button style="display: none;">Click me!</button>';
-        Echo "</section>";
+
         ?>
+
+        <section>
+        <img src="img/usa.png" alt="Country Flag"> <!-- You can change "img/usa.png" to any image source you want displayed, the correct image sizing is 200x105. -->
+        <h1><span style=""><b>US SERVERS</b></span></h1> <!-- You can change this text to anything you want displayed as the first header. -->
+        <h3>Server Name Heading H3</h3> <!-- You can change this text to anything you want displayed as the second header. -->
+        <b>Server ID</b>: <?php echo $serverId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Name</b>: <?php echo $serverName; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Display IP</b>: <?php echo $serverIp; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Game Port</b>: <?php echo $serverGamePort; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Query Port</b>: <?php echo $serverQueryPort; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Map</b>: <?php echo $serverMapName; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Status</b>: <?php echo $serverStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Online Players</b>: <?php echo $serverOnlinePlayers; ?> | <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Max Slots</b>: <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b>Server Total Votes</b>: <?php echo $serverVotes; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <button style="display: none;">Click me!</button>
+        </section>
     </body>
 </html>
