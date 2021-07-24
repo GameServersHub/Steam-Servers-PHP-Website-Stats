@@ -7,6 +7,7 @@
         <meta name="author" content=""> <!-- Use "SEO" friendly tags/keywords here to improve your google search ranking. -->
         <title>SERVERNAME | STATS</title> <!-- Make sure you change this to be SEO friendly. This text displays at the very top of the browser tab. -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     
@@ -34,6 +35,24 @@ $serverOnlinePlayers = $url->players; // This will grab the 'servers online play
 $serverMaxPlayers = $url->maxplayers; // This will grab the 'servers total players' section from the decoded JSON and it will display it below inside the echo.
 $serverVotes = $url->votes; // This will grab the 'servers total player votes' section from the decoded JSON and it will display it below inside the echo.
 
+// Servers online/offline status text placeholders.
+$statusString01 = $serverStatus;
+$patterns01 = array();
+$patterns01[1] = '/online/';
+$patterns01[0] = '/offline/';
+$replacements01 = array();
+$replacements01[1] = '<small class="bg-gradient bg-success border border-success rounded shadow text-center">Server is online</small>';
+$replacements01[0] = '<small class="bg-gradient bg-danger border border-danger rounded shadow text-center">Server is offline</small>';
+$replaceStatus = preg_replace($patterns01, $replacements01, $statusString01);
+
+// Servers total votes text placeholders.
+$statusString02 = $serverVotes;
+$patterns02 = array();
+$patterns02[0] = '/0/';
+$replacements02 = array();
+$replacements02[0] = 'No votes';
+$replaceVotes = preg_replace($patterns02, $replacements02, $statusString02);
+
 /*
 F.A.Q SECTION:
 
@@ -50,8 +69,9 @@ Question: How do I add this to my current website?
 Reply: You only need to copy and paste this code into the section you want it displayed on your website. Websites like "wordpress" have the "shortcode" options.
 */
 
-echo "Server ID: $serverId || Server Name: $serverName || Server Display IP: $serverIp || Server Query Port: $serverQueryPort || Server Game Port: $serverGamePort || Server Map: $serverMapName || Server Status: $serverStatus || Server Online Players: $serverOnlinePlayers/$serverMaxPlayers || Server Max Slots: $serverMaxPlayers || Server Total Votes: $serverVotes ||"; // This will display the online total players starting from a minimal of 0.
+echo "Server ID: $serverId || Server Name: $serverName || Server Display IP: $serverIp || Server Query Port: $serverQueryPort || Server Game Port: $serverGamePort || Server Map: $serverMapName || Server Status: $replaceStatus || Server Online Players: $serverOnlinePlayers/$serverMaxPlayers || Server Max Slots: $serverMaxPlayers || Server Total Votes: $replaceVotes ||"; // This will display the online total players starting from a minimal of 0.
 ?>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

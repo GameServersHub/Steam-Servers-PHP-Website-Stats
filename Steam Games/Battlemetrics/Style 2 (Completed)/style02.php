@@ -7,6 +7,7 @@
         <meta name="author" content=""> <!-- Use "SEO" friendly tags/keywords here to improve your google search ranking. -->
         <title>SERVERNAME | STATS</title> <!-- Make sure you change this to be SEO friendly. This text displays at the very top of the browser tab. -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <?php
@@ -53,6 +54,16 @@
         $serverCountry = $url->data->attributes->country; // This will grab the 'servers country origin' section from the decoded JSON and it will display it below inside the echo.
         $serverQueryStatus = $url->data->attributes->queryStatus; // This will grab the 'servers last successful query status' section from the decoded JSON and it will display it below inside the echo.
         
+        // Servers online/offline status text placeholders.
+        $statusString01 = $serverStatus;
+        $patterns01 = array();
+        $patterns01[1] = '/online/';
+        $patterns01[0] = '/offline/';
+        $replacements01 = array();
+        $replacements01[1] = '<small class="bg-gradient bg-success border border-success rounded shadow text-center">Server is online</small>';
+        $replacements01[0] = '<small class="bg-gradient bg-danger border border-danger rounded shadow text-center">Server is offline</small>';
+        $replaceStatus = preg_replace($patterns01, $replacements01, $statusString01);
+
         /*
         F.A.Q SECTION:
 
@@ -74,7 +85,7 @@
         <section>
         <img src="img/usa.png" alt="Country Flag"> <!-- You can change "img/usa.png" to any image source you want displayed, the correct image sizing is 200x105. -->
         <h1><span style=""><b>US SERVERS</b></span></h1> <!-- You can change this text to anything you want displayed as the first header. -->
-        <h3>Server Name Heading H3</h3> <!-- You can change this text to anything you want displayed as the second header. -->
+        <h3>Placeholder Text (Add your text here)</h3> <!-- You can change this text to anything you want displayed as the second header. -->
         <b> Server Type</b>: <?php echo $serverType; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
 		<b> Server ID</b>: <?php echo $serverId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Name</b>: <?php echo $serverName; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
@@ -85,7 +96,7 @@
         <b> Server Max Slots</b>: <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Ranking</b>: <?php echo $serverRank; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Location</b>: [<?php echo $serverLocation[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Online Status</b>: <?php echo $serverStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Online Status</b>: <?php echo $replaceStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server ModIDS</b>: [<?php echo $serverModIds[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Mod Hashes</b>: [<?php echo $serverModHashes[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Map</b>: <?php echo $serverMap; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
@@ -105,5 +116,6 @@
         <b> Server Query Port</b>: <?php echo $serverPortQuery; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Country</b>: <?php echo $serverCountry; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Query Status</b>: <?php echo $serverQueryStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
