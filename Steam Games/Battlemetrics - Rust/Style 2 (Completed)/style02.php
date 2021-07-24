@@ -23,36 +23,54 @@
         Open Source Link: https://github.com/GameServersHub
         */
         $url = json_decode(file_get_contents("https://api.battlemetrics.com/servers/ServerKey")); // Replace "ServerKey" with your own dedicated server key from Battlemetrics.
-        $serverType = $url->data->type; // This will grab the 'servers custom id' section from the decoded JSON and it will display it below inside the echo.
-        $serverId = $url->data->id; // This will grab the 'servers assigned ID number' section from the decoded JSON and it will display it below inside the echo.
-        $serverName = $url->data->attributes->name; // This will grab the 'servers display name' section from the decoded JSON and it will display it below inside the echo.
-        $serverAddress = $url->data->attributes->address; // This will grab the 'servers display address' section from the decoded JSON and it will display it below inside the echo.
-        $serverIp = $url->data->attributes->ip; // This will grab the 'servers dedicated IP' section from the decoded JSON and it will display it below inside the echo.
-        $serverPort = $url->data->attributes->port; // This will grab the 'servers game port' section from the decoded JSON and it will display it below inside the echo.
-        $serverPlayers = $url->data->attributes->players; // This will grab the 'servers online players' section from the decoded JSON and it will display it below inside the echo.
-        $serverMaxPlayers = $url->data->attributes->maxPlayers; // This will grab the 'servers total players' section from the decoded JSON and it will display it below inside the echo.
-        $serverRank = $url->data->attributes->rank; // This will grab the 'servers current ranking' section from the decoded JSON and it will display it below inside the echo.
-        $serverLocation = $url->data->attributes->location; // This will grab the 'servers hardware location' section from the decoded JSON and it will display it below inside the echo.
-        $serverStatus = $url->data->attributes->status; // This will grab the 'servers online/offline status' section from the decoded JSON and it will display it below inside the echo.
-        $serverModIds = $url->data->attributes->details->modIds; // This will grab the 'servers dedicated modIDs' section from the decoded JSON and it will display it below inside the echo.
-        $serverModHashes = $url->data->attributes->details->modHashes; // This will grab the 'servers dedicated modHashes' section from the decoded JSON and it will display it below inside the echo.
-        $serverMap = $url->data->attributes->details->map; // This will grab the 'servers map name' section from the decoded JSON and it will display it below inside the echo.
-        $serverTime = $url->data->attributes->details->time; // This will grab the 'servers local time' section from the decoded JSON and it will display it below inside the echo.
-        $serverTimeI = $url->data->attributes->details->time_i; // This will grab the 'servers international time format' section from the decoded JSON and it will display it below inside the echo.
-        $serverOfficial = $url->data->attributes->details->official; // This will grab the 'servers official status' section from the decoded JSON and it will display it below inside the echo.
-        $serverGamemode = $url->data->attributes->details->gamemode; // This will grab the 'servers current gamemode' section from the decoded JSON and it will display it below inside the echo.
-        $serverModNames = $url->data->attributes->details->modNames; // This will grab the 'servers list of modnames' section from the decoded JSON and it will display it below inside the echo.
-        $serverPve = $url->data->attributes->details->pve; // This will grab the 'servers PVE mode status' section from the decoded JSON and it will display it below inside the echo.
-        $serverModded = $url->data->attributes->details->modded; // This will grab the 'servers modded status' section from the decoded JSON and it will display it below inside the echo.
-        $serverCrossplay = $url->data->attributes->details->crossplay; // This will grab the 'servers crossplay status' section from the decoded JSON and it will display it below inside the echo.
-        $serverSessionFlags = $url->data->attributes->details->session_flags; // This will grab the 'servers sessions flags' section from the decoded JSON and it will display it below inside the echo.
-        $serverSteamId = $url->data->attributes->details->serverSteamId; // This will grab the 'servers owner steamID' section from the decoded JSON and it will display it below inside the echo.
-        $serverPrivate = $url->data->attributes->private; // This will grab the 'servers password protected status' section from the decoded JSON and it will display it below inside the echo.
-        $serverCreatedAt = $url->data->attributes->createdAt; // This will grab the 'servers creation date' section from the decoded JSON and it will display it below inside the echo.
-        $serverUpdatedAt = $url->data->attributes->updatedAt; // This will grab the 'servers last updated date' section from the decoded JSON and it will display it below inside the echo.
-        $serverPortQuery = $url->data->attributes->portQuery; // This will grab the 'servers query port' section from the decoded JSON and it will display it below inside the echo.
-        $serverCountry = $url->data->attributes->country; // This will grab the 'servers country origin' section from the decoded JSON and it will display it below inside the echo.
-        $serverQueryStatus = $url->data->attributes->queryStatus; // This will grab the 'servers last successful query status' section from the decoded JSON and it will display it below inside the echo.
+        $serverType = $url->data->type; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverId = $url->data->id; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverName = $url->data->attributes->name; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverAddress = $url->data->attributes->address; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverIp = $url->data->attributes->ip; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverGamePort = $url->data->attributes->port; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverOnlinePlayers = $url->data->attributes->players; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverMaxPlayers = $url->data->attributes->maxPlayers; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRanking = $url->data->attributes->rank; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverLocation = $url->data->attributes->location; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverStatus = $url->data->attributes->status; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverOfficial = $url->data->attributes->details->official; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustType = $url->data->attributes->details->rust_type; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverMap = $url->data->attributes->details->map; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverEnvironment = $url->data->attributes->details->environment; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustBuild = $url->data->attributes->details->rust_build; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustEntCntI = $url->data->attributes->details->rust_ent_cnt_i; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustFps = $url->data->attributes->details->rust_fps; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustAverageFps = $url->data->attributes->details->rust_fps_avg; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustGcCl = $url->data->attributes->details->rust_gc_cl; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustGcMb = $url->data->attributes->details->rust_gc_mb; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustHash = $url->data->attributes->details->rust_hash; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustHeaderImage = $url->data->attributes->details->rust_headerimage; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustMemPv = $url->data->attributes->details->rust_mem_pv; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustMemWs = $url->data->attributes->details->rust_mem_ws; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverPve = $url->data->attributes->details->pve; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustUptime = $url->data->attributes->details->rust_uptime; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustUrl = $url->data->attributes->details->rust_url; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustWorldSeed = $url->data->attributes->details->rust_world_seed; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustWorldSize = $url->data->attributes->details->rust_world_size; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustSeed = $url->data->attributes->details->rust_maps->seed; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustSize = $url->data->attributes->details->rust_maps->size; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverUrl = $url->data->attributes->details->rust_maps->url; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverThumbnailUrl = $url->data->attributes->details->rust_maps->thumbnailUrl; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverMonuments = $url->data->attributes->details->rust_maps->monuments; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverBarren = $url->data->attributes->details->rust_maps->barren; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $severRustDescription = $url->data->attributes->details->rust_description; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustModded = $url->data->attributes->details->rust_modded; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustQueuedPlayers = $url->data->attributes->details->rust_queued_players; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustLastWipe = $url->data->attributes->details->rust_last_wipe; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustLastWipeEnt = $url->data->attributes->details->rust_last_wipe_ent; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverOwnerSteamId = $url->data->attributes->details->serverSteamId; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustPrivate = $url->data->attributes->private; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustCreatedAt = $url->data->attributes->createdAt; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverRustUpdatedAt = $url->data->attributes->updatedAt; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverQueryPort = $url->data->attributes->portQuery; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverCountry = $url->data->attributes->country; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
+        $serverQueryStatus = $url->data->attributes->queryStatus; // This will grab the 'XXXXXX' section from the decoded JSON and it will display it below inside the echo.
         
         // Servers online/offline status text placeholders.
         $statusString01 = $serverStatus;
@@ -87,38 +105,51 @@
         <h1><span style=""><b>US SERVERS</b></span></h1> <!-- You can change this text to anything you want displayed as the first header. -->
         <h3>Placeholder Text (Add your text here)</h3> <!-- You can change this text to anything you want displayed as the second header. -->
         <b> Server Type</b>: <?php echo $serverType; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-		<b> Server ID</b>: <?php echo $serverId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server ID</b>: <?php echo $serverId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Name</b>: <?php echo $serverName; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Address</b>: <?php echo $serverAddress; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server IP</b>: <?php echo $serverIp; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Game Port</b>: <?php echo $serverPort; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Online Players</b>: <?php echo $serverPlayers; ?> | <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Display Address</b>: <?php echo $serverAddress; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Dedicated IP</b>: <?php echo $serverIp; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Game Port</b>: <?php echo $serverGamePort; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Online Players</b>: <?php echo $serverOnlinePlayers; ?> | <?php echo $serverMaxPlayers; ?><br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Max Slots</b>: <?php echo $serverMaxPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Ranking</b>: <?php echo $serverRank; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Location</b>: [<?php echo $serverLocation[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Online Status</b>: <?php echo $replaceStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server ModIDS</b>: [<?php echo $serverModIds[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Mod Hashes</b>: [<?php echo $serverModHashes[0]; ?>] <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Map</b>: <?php echo $serverMap; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Local Time</b>: <?php echo $serverTime; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server International Time</b>: <?php echo $serverTimeI; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Ranking</b>: <?php echo $serverRanking; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Location</b>: <?php echo $serverLocation[0]; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Online Status</b>: <?php echo $statusString01; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Official Status</b>: <?php echo $serverOfficial; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Gamemode Status</b>: <?php echo $serverGamemode; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Mod Names</b>:  <!-- This will create an array of mod names in a listing format structure (Special credit to Vas). -->
-        <div class="col-lg-4">
-        <?php foreach ($serverModNames as $modNames):?>
-              <li><?php echo $modNames; ?></li>
-        <?php endforeach ?>
-        </div>
-        <b> Server PVE Status</b>: <?php echo $serverPve; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Modded Status</b>: <?php echo $serverModded; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Crossplay Status</b>: <?php echo $serverCrossplay; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Session Flags</b>: <?php echo $serverSessionFlags; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Owner SteamID</b>: <?php echo $serverSteamId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Password Protected</b>: <?php echo $serverPrivate; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Creation Date</b>: <?php echo $serverCreatedAt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Last Update Date</b>: <?php echo $serverUpdatedAt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
-        <b> Server Query Port</b>: <?php echo $serverPortQuery; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Type</b>: <?php echo $serverRustType; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Map</b>: <?php echo $serverMap; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Environment</b>: <?php echo $serverEnvironment; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Build</b>: <?php echo $serverRustBuild; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust ENT/CNT I</b>: <?php echo $serverRustEntCntI; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust FPS</b>: <?php echo $serverRustFps; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Average FPS</b>: <?php echo $serverRustAverageFps; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust GC C1</b>: <?php echo $serverRustGcCl; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust GC MB</b>: <?php echo $serverRustGcMb; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Hash</b>: <?php echo $serverRustHash; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Header Image</b>: <?php echo $serverRustHeaderImage; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Mem PV</b>: <?php echo $serverRustMemPv; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Mem WS</b>: <?php echo $serverRustMemWs; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server PVE Mode</b>: <?php echo $serverPve; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Uptime</b>: <?php echo $serverRustUptime; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Website URL</b>: <?php echo $serverRustUrl; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server World Seed</b>: <?php echo $serverRustWorldSeed; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server World Size</b>: <?php echo $serverRustWorldSize; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Seed</b>: <?php echo $serverRustSeed; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Size</b>: <?php echo $serverRustSize; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust URL</b>: <?php echo $serverUrl; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Thumbnail URL</b>: <?php echo $serverThumbnailUrl; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Monuments</b>: <?php echo $serverMonuments; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Barren</b>: <?php echo $serverBarren; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Description</b>: <?php echo $severRustDescription; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Modded</b>: <?php echo $serverRustModded; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Rust Queued Players</b>: <?php echo $serverRustQueuedPlayers; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Last Wipe</b>: <?php echo $serverRustLastWipe; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Last Wipe ENT</b>: <?php echo $serverRustLastWipeEnt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Owner SteamID</b>: <?php echo $serverOwnerSteamId; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Password Protected</b>: <?php echo $serverRustPrivate; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Created At</b>: <?php echo $serverRustCreatedAt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Updated Last</b>: <?php echo $serverRustUpdatedAt; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
+        <b> Server Query Port</b>: <?php echo $serverQueryPort; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Country</b>: <?php echo $serverCountry; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <b> Server Query Status</b>: <?php echo $serverQueryStatus; ?> <br> <!-- This will grab the formatted JSON data and display the results inside this section. -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
