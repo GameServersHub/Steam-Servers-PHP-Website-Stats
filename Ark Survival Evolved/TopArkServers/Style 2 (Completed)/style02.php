@@ -21,18 +21,17 @@
         Style version: Style02
         Open Source Link: https://github.com/GameServersHub
         */
-        $url = file_get_contents("https://toparkservers.com/api/serverdetails/ServerKey"); // Replace "ServerKey" with your own dedicated server key from TopArkServers.
-        $formated = json_decode($url); // This grabs the data from the URL above and formats it to a readable format for PHP.
-        $serverId = $formated->serverid; // This will grab the 'servers custom id' section from the decoded JSON and it will display it below inside the echo.
-        $serverName = $formated->servername; // This will grab the 'servers name' section from the decoded JSON and it will display it below inside the echo.
-        $serverIp = $formated->ip; // This will grab the 'display servers ip address' section from the decoded JSON and it will display it below inside the echo.
-        $serverQueryPort = $formated->queryport; // This will grab the 'servers dedicated steam query port' section from the decoded JSON and it will display it below inside the echo.
-        $serverGamePort = $formated->gameport; // This will grab the 'servers dedicated steam game port' section from the decoded JSON and it will display it below inside the echo.
-        $serverMapName = $formated->map; // This will grab the 'servers dedicated map' section from the decoded JSON and it will display it below inside the echo.
-        $serverStatus = $formated->status; // This will grab the 'servers online or offline status' section from the decoded JSON and it will display it below inside the echo.
-        $serverOnlinePlayers = $formated->players; // This will grab the 'servers online players' section from the decoded JSON and it will display it below inside the echo.
-        $serverMaxPlayers = $formated->maxplayers; // This will grab the 'servers total players' section from the decoded JSON and it will display it below inside the echo.
-        $serverVotes = $formated->votes; // This will grab the 'servers total player votes' section from the decoded JSON and it will display it below inside the echo.
+        $url = json_decode(file_get_contents("https://toparkservers.com/api/serverdetails/ServerKey")); // Replace "ServerKey" with your own dedicated server key from TopArkServers.
+        $serverId = $url->serverid; // This will grab the 'servers custom id' section from the decoded JSON and it will display it below inside the echo.
+        $serverName = $url->servername; // This will grab the 'servers name' section from the decoded JSON and it will display it below inside the echo.
+        $serverIp = $url->ip; // This will grab the 'display servers ip address' section from the decoded JSON and it will display it below inside the echo.
+        $serverQueryPort = $url->queryport; // This will grab the 'servers dedicated steam query port' section from the decoded JSON and it will display it below inside the echo.
+        $serverGamePort = $url->gameport; // This will grab the 'servers dedicated steam game port' section from the decoded JSON and it will display it below inside the echo.
+        $serverMapName = $url->map; // This will grab the 'servers dedicated map' section from the decoded JSON and it will display it below inside the echo.
+        $serverStatus = $url->status; // This will grab the 'servers online or offline status' section from the decoded JSON and it will display it below inside the echo.
+        $serverOnlinePlayers = $url->players; // This will grab the 'servers online players' section from the decoded JSON and it will display it below inside the echo.
+        $serverMaxPlayers = $url->maxplayers; // This will grab the 'servers total players' section from the decoded JSON and it will display it below inside the echo.
+        $serverVotes = $url->votes; // This will grab the 'servers total player votes' section from the decoded JSON and it will display it below inside the echo.
         
         /*
         F.A.Q SECTION:

@@ -21,38 +21,37 @@
         Style version: Style02
         Open Source Link: https://github.com/GameServersHub
         */
-        $url = file_get_contents("https://api.battlemetrics.com/servers/ServerKey"); // Replace "ServerKey" with your own dedicated server key from Battlemetrics.
-        $formated = json_decode($url); // This grabs the data from the URL above and formats it to a readable format for PHP.
-        $serverType = $formated->data->type; // This will grab the 'servers custom id' section from the decoded JSON and it will display it below inside the echo.
-        $serverId = $formated->data->id; // This will grab the 'servers assigned ID number' section from the decoded JSON and it will display it below inside the echo.
-        $serverName = $formated->data->attributes->name; // This will grab the 'servers display name' section from the decoded JSON and it will display it below inside the echo.
-        $serverAddress = $formated->data->attributes->address; // This will grab the 'servers display address' section from the decoded JSON and it will display it below inside the echo.
-        $serverIp = $formated->data->attributes->ip; // This will grab the 'servers dedicated IP' section from the decoded JSON and it will display it below inside the echo.
-        $serverPort = $formated->data->attributes->port; // This will grab the 'servers game port' section from the decoded JSON and it will display it below inside the echo.
-        $serverPlayers = $formated->data->attributes->players; // This will grab the 'servers online players' section from the decoded JSON and it will display it below inside the echo.
-        $serverMaxPlayers = $formated->data->attributes->maxPlayers; // This will grab the 'servers total players' section from the decoded JSON and it will display it below inside the echo.
-        $serverRank = $formated->data->attributes->rank; // This will grab the 'servers current ranking' section from the decoded JSON and it will display it below inside the echo.
-        $serverLocation = $formated->data->attributes->location; // This will grab the 'servers hardware location' section from the decoded JSON and it will display it below inside the echo.
-        $serverStatus = $formated->data->attributes->status; // This will grab the 'servers online/offline status' section from the decoded JSON and it will display it below inside the echo.
-        $serverModIds = $formated->data->attributes->details->modIds; // This will grab the 'servers dedicated modIDs' section from the decoded JSON and it will display it below inside the echo.
-        $serverModHashes = $formated->data->attributes->details->modHashes; // This will grab the 'servers dedicated modHashes' section from the decoded JSON and it will display it below inside the echo.
-        $serverMap = $formated->data->attributes->details->map; // This will grab the 'servers map name' section from the decoded JSON and it will display it below inside the echo.
-        $serverTime = $formated->data->attributes->details->time; // This will grab the 'servers local time' section from the decoded JSON and it will display it below inside the echo.
-        $serverTimeI = $formated->data->attributes->details->time_i; // This will grab the 'servers international time format' section from the decoded JSON and it will display it below inside the echo.
-        $serverOfficial = $formated->data->attributes->details->official; // This will grab the 'servers official status' section from the decoded JSON and it will display it below inside the echo.
-        $serverGamemode = $formated->data->attributes->details->gamemode; // This will grab the 'servers current gamemode' section from the decoded JSON and it will display it below inside the echo.
-        $serverModNames = $formated->data->attributes->details->modNames; // This will grab the 'servers list of modnames' section from the decoded JSON and it will display it below inside the echo.
-        $serverPve = $formated->data->attributes->details->pve; // This will grab the 'servers PVE mode status' section from the decoded JSON and it will display it below inside the echo.
-        $serverModded = $formated->data->attributes->details->modded; // This will grab the 'servers modded status' section from the decoded JSON and it will display it below inside the echo.
-        $serverCrossplay = $formated->data->attributes->details->crossplay; // This will grab the 'servers crossplay status' section from the decoded JSON and it will display it below inside the echo.
-        $serverSessionFlags = $formated->data->attributes->details->session_flags; // This will grab the 'servers sessions flags' section from the decoded JSON and it will display it below inside the echo.
-        $serverSteamId = $formated->data->attributes->details->serverSteamId; // This will grab the 'servers owner steamID' section from the decoded JSON and it will display it below inside the echo.
-        $serverPrivate = $formated->data->attributes->private; // This will grab the 'servers password protected status' section from the decoded JSON and it will display it below inside the echo.
-        $serverCreatedAt = $formated->data->attributes->createdAt; // This will grab the 'servers creation date' section from the decoded JSON and it will display it below inside the echo.
-        $serverUpdatedAt = $formated->data->attributes->updatedAt; // This will grab the 'servers last updated date' section from the decoded JSON and it will display it below inside the echo.
-        $serverPortQuery = $formated->data->attributes->portQuery; // This will grab the 'servers query port' section from the decoded JSON and it will display it below inside the echo.
-        $serverCountry = $formated->data->attributes->country; // This will grab the 'servers country origin' section from the decoded JSON and it will display it below inside the echo.
-        $serverQueryStatus = $formated->data->attributes->queryStatus; // This will grab the 'servers last successful query status' section from the decoded JSON and it will display it below inside the echo.
+        $url = json_decode(file_get_contents("https://api.battlemetrics.com/servers/ServerKey")); // Replace "ServerKey" with your own dedicated server key from Battlemetrics.
+        $serverType = $url->data->type; // This will grab the 'servers custom id' section from the decoded JSON and it will display it below inside the echo.
+        $serverId = $url->data->id; // This will grab the 'servers assigned ID number' section from the decoded JSON and it will display it below inside the echo.
+        $serverName = $url->data->attributes->name; // This will grab the 'servers display name' section from the decoded JSON and it will display it below inside the echo.
+        $serverAddress = $url->data->attributes->address; // This will grab the 'servers display address' section from the decoded JSON and it will display it below inside the echo.
+        $serverIp = $url->data->attributes->ip; // This will grab the 'servers dedicated IP' section from the decoded JSON and it will display it below inside the echo.
+        $serverPort = $url->data->attributes->port; // This will grab the 'servers game port' section from the decoded JSON and it will display it below inside the echo.
+        $serverPlayers = $url->data->attributes->players; // This will grab the 'servers online players' section from the decoded JSON and it will display it below inside the echo.
+        $serverMaxPlayers = $url->data->attributes->maxPlayers; // This will grab the 'servers total players' section from the decoded JSON and it will display it below inside the echo.
+        $serverRank = $url->data->attributes->rank; // This will grab the 'servers current ranking' section from the decoded JSON and it will display it below inside the echo.
+        $serverLocation = $url->data->attributes->location; // This will grab the 'servers hardware location' section from the decoded JSON and it will display it below inside the echo.
+        $serverStatus = $url->data->attributes->status; // This will grab the 'servers online/offline status' section from the decoded JSON and it will display it below inside the echo.
+        $serverModIds = $url->data->attributes->details->modIds; // This will grab the 'servers dedicated modIDs' section from the decoded JSON and it will display it below inside the echo.
+        $serverModHashes = $url->data->attributes->details->modHashes; // This will grab the 'servers dedicated modHashes' section from the decoded JSON and it will display it below inside the echo.
+        $serverMap = $url->data->attributes->details->map; // This will grab the 'servers map name' section from the decoded JSON and it will display it below inside the echo.
+        $serverTime = $url->data->attributes->details->time; // This will grab the 'servers local time' section from the decoded JSON and it will display it below inside the echo.
+        $serverTimeI = $url->data->attributes->details->time_i; // This will grab the 'servers international time format' section from the decoded JSON and it will display it below inside the echo.
+        $serverOfficial = $url->data->attributes->details->official; // This will grab the 'servers official status' section from the decoded JSON and it will display it below inside the echo.
+        $serverGamemode = $url->data->attributes->details->gamemode; // This will grab the 'servers current gamemode' section from the decoded JSON and it will display it below inside the echo.
+        $serverModNames = $url->data->attributes->details->modNames; // This will grab the 'servers list of modnames' section from the decoded JSON and it will display it below inside the echo.
+        $serverPve = $url->data->attributes->details->pve; // This will grab the 'servers PVE mode status' section from the decoded JSON and it will display it below inside the echo.
+        $serverModded = $url->data->attributes->details->modded; // This will grab the 'servers modded status' section from the decoded JSON and it will display it below inside the echo.
+        $serverCrossplay = $url->data->attributes->details->crossplay; // This will grab the 'servers crossplay status' section from the decoded JSON and it will display it below inside the echo.
+        $serverSessionFlags = $url->data->attributes->details->session_flags; // This will grab the 'servers sessions flags' section from the decoded JSON and it will display it below inside the echo.
+        $serverSteamId = $url->data->attributes->details->serverSteamId; // This will grab the 'servers owner steamID' section from the decoded JSON and it will display it below inside the echo.
+        $serverPrivate = $url->data->attributes->private; // This will grab the 'servers password protected status' section from the decoded JSON and it will display it below inside the echo.
+        $serverCreatedAt = $url->data->attributes->createdAt; // This will grab the 'servers creation date' section from the decoded JSON and it will display it below inside the echo.
+        $serverUpdatedAt = $url->data->attributes->updatedAt; // This will grab the 'servers last updated date' section from the decoded JSON and it will display it below inside the echo.
+        $serverPortQuery = $url->data->attributes->portQuery; // This will grab the 'servers query port' section from the decoded JSON and it will display it below inside the echo.
+        $serverCountry = $url->data->attributes->country; // This will grab the 'servers country origin' section from the decoded JSON and it will display it below inside the echo.
+        $serverQueryStatus = $url->data->attributes->queryStatus; // This will grab the 'servers last successful query status' section from the decoded JSON and it will display it below inside the echo.
         
         /*
         F.A.Q SECTION:
