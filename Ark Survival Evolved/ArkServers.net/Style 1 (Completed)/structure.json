@@ -1,0 +1,396 @@
+{
+  "info": {
+    "Protocol": 17,
+    "HostName": "[1/8] CHAOS GAMING PVE PRIMAL FEAR RAGNAROK - (v342.13)",
+    "Map": "Ragnarok",
+    "ModDir": "ark_survival_evolved",
+    "ModDesc": "ARK: Survival Evolved",
+    "AppID": 0,
+    "Players": 49,
+    "MaxPlayers": 75,
+    "Bots": 0,
+    "Dedicated": "d",
+    "Os": "w",
+    "Password": false,
+    "Secure": true,
+    "Version": "1.0.0.0",
+    "ExtraDataFlags": 177,
+    "GamePort": 7830,
+    "SteamID": 90155147585626121,
+    "GameTags": ",OWNINGID:90155147585626121,OWNINGNAME:90155147585626121,NUMOPENPUBCONN:45,P2PADDR:90155147585626121,P2PPORT:7830,LEGACY_i:0",
+    "GameID": 346110
+  },
+  "players": [
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 48304,
+      "TimeF": "13:24:33"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 46551,
+      "TimeF": "12:55:20"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 45501,
+      "TimeF": "12:37:50"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 43091,
+      "TimeF": "11:57:40"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 41652,
+      "TimeF": "11:33:41"
+    },
+    {
+      "Id": 0,
+      "Name": "Hoss",
+      "Frags": 0,
+      "Time": 40947,
+      "TimeF": "11:21:56"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 40836,
+      "TimeF": "11:20:05"
+    },
+    {
+      "Id": 0,
+      "Name": "bryanvid8",
+      "Frags": 0,
+      "Time": 39415,
+      "TimeF": "10:56:24"
+    },
+    {
+      "Id": 0,
+      "Name": "ICEYvamp",
+      "Frags": 0,
+      "Time": 35014,
+      "TimeF": "09:43:03"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 34647,
+      "TimeF": "09:36:56"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 33267,
+      "TimeF": "09:13:56"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 33236,
+      "TimeF": "09:13:25"
+    },
+    {
+      "Id": 0,
+      "Name": "Grinner25",
+      "Frags": 0,
+      "Time": 31320,
+      "TimeF": "08:41:29"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 29461,
+      "TimeF": "08:10:30"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 28397,
+      "TimeF": "07:52:46"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 20920,
+      "TimeF": "05:48:09"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 17082,
+      "TimeF": "04:44:11"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 15147,
+      "TimeF": "04:11:56"
+    },
+    {
+      "Id": 0,
+      "Name": "bigp3rm",
+      "Frags": 0,
+      "Time": 13591,
+      "TimeF": "03:46:00"
+    },
+    {
+      "Id": 0,
+      "Name": "probushcamper",
+      "Frags": 0,
+      "Time": 12391,
+      "TimeF": "03:26:00"
+    },
+    {
+      "Id": 0,
+      "Name": "Jesumyn Teridax",
+      "Frags": 0,
+      "Time": 12377,
+      "TimeF": "03:25:46"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 11510,
+      "TimeF": "03:11:19"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 10271,
+      "TimeF": "02:50:40"
+    },
+    {
+      "Id": 0,
+      "Name": "chanyanga",
+      "Frags": 0,
+      "Time": 10173,
+      "TimeF": "02:49:02"
+    },
+    {
+      "Id": 0,
+      "Name": "CyKo",
+      "Frags": 0,
+      "Time": 9619,
+      "TimeF": "02:39:48"
+    },
+    {
+      "Id": 0,
+      "Name": "Cosmicfrosty69",
+      "Frags": 0,
+      "Time": 9464,
+      "TimeF": "02:37:13"
+    },
+    {
+      "Id": 0,
+      "Name": "AmisTR",
+      "Frags": 0,
+      "Time": 8538,
+      "TimeF": "02:21:47"
+    },
+    {
+      "Id": 0,
+      "Name": "xancherry",
+      "Frags": 0,
+      "Time": 7275,
+      "TimeF": "02:00:44"
+    },
+    {
+      "Id": 0,
+      "Name": "Worland",
+      "Frags": 0,
+      "Time": 6620,
+      "TimeF": "01:49:49"
+    },
+    {
+      "Id": 0,
+      "Name": "R3X3Y",
+      "Frags": 0,
+      "Time": 5586,
+      "TimeF": "01:32:35"
+    },
+    {
+      "Id": 0,
+      "Name": "WillyQuick",
+      "Frags": 0,
+      "Time": 5449,
+      "TimeF": "01:30:18"
+    },
+    {
+      "Id": 0,
+      "Name": "Forsaken",
+      "Frags": 0,
+      "Time": 5260,
+      "TimeF": "01:27:09"
+    },
+    {
+      "Id": 0,
+      "Name": "Frankie",
+      "Frags": 0,
+      "Time": 5229,
+      "TimeF": "01:26:38"
+    },
+    {
+      "Id": 0,
+      "Name": "ManLow",
+      "Frags": 0,
+      "Time": 5003,
+      "TimeF": "01:22:52"
+    },
+    {
+      "Id": 0,
+      "Name": "dustin20056",
+      "Frags": 0,
+      "Time": 4389,
+      "TimeF": "01:12:38"
+    },
+    {
+      "Id": 0,
+      "Name": "Koogel",
+      "Frags": 0,
+      "Time": 3915,
+      "TimeF": "01:04:44"
+    },
+    {
+      "Id": 0,
+      "Name": "Regular-Robert",
+      "Frags": 0,
+      "Time": 3497,
+      "TimeF": "57:46"
+    },
+    {
+      "Id": 0,
+      "Name": "MorphOakland59",
+      "Frags": 0,
+      "Time": 2419,
+      "TimeF": "39:48"
+    },
+    {
+      "Id": 0,
+      "Name": "ƒlòkí",
+      "Frags": 0,
+      "Time": 2205,
+      "TimeF": "36:14"
+    },
+    {
+      "Id": 0,
+      "Name": "knock knock",
+      "Frags": 0,
+      "Time": 2156,
+      "TimeF": "35:25"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 2117,
+      "TimeF": "34:46"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 1399,
+      "TimeF": "22:48"
+    },
+    {
+      "Id": 0,
+      "Name": "Tarts",
+      "Frags": 0,
+      "Time": 1319,
+      "TimeF": "21:28"
+    },
+    {
+      "Id": 0,
+      "Name": "Exotika Mojo",
+      "Frags": 0,
+      "Time": 1192,
+      "TimeF": "19:21"
+    },
+    {
+      "Id": 0,
+      "Name": "Kazuyii",
+      "Frags": 0,
+      "Time": 431,
+      "TimeF": "06:40"
+    },
+    {
+      "Id": 0,
+      "Name": "JohnnyKarate",
+      "Frags": 0,
+      "Time": 263,
+      "TimeF": "03:52"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 227,
+      "TimeF": "03:16"
+    },
+    {
+      "Id": 0,
+      "Name": "drewbobloo",
+      "Frags": 0,
+      "Time": 147,
+      "TimeF": "01:56"
+    },
+    {
+      "Id": 0,
+      "Name": "",
+      "Frags": 0,
+      "Time": 60,
+      "TimeF": "00:29"
+    }
+  ],
+  "rules": {
+    "ALLOWDOWNLOADCHARS_i": "1",
+    "ALLOWDOWNLOADITEMS_i": "1",
+    "ClusterId_s": "ChaosGaming2020PF",
+    "CUSTOMSERVERNAME_s": "[1/8] chaos gaming pve primal fear ragnarok",
+    "DayTime_s": "124",
+    "GameMode_s": "TestGameMode_Primal_Fear_C",
+    "HASACTIVEMODS_i": "1",
+    "LEGACY_i": "0",
+    "MATCHTIMEOUT_f": "120.000000",
+    "MOD0_s": "839162288:9FE7C03448AFC47F74ADCC8DCA56997D",
+    "MOD1_s": "899987403:C565D4BD406C7FC93D4C60BBB9666034",
+    "MOD2_s": "1814953878:0983B24C4735B35C16273FA27503DD27",
+    "MOD3_s": "741203089:7C0BEB864FB783F04DA51BB6BB5E3054",
+    "ModId_l": "0",
+    "Networking_i": "0",
+    "NUMOPENPUBCONN": "45",
+    "OFFICIALSERVER_i": "0",
+    "OWNINGID": "90155147585626121",
+    "OWNINGNAME": "90155147585626121",
+    "P2PADDR": "90155147585626121",
+    "P2PPORT": "7830",
+    "SEARCHKEYWORDS_s": "Custom",
+    "ServerPassword_b": "false",
+    "SERVERUSESBATTLEYE_b": "false",
+    "SESSIONFLAGS": "683",
+    "SESSIONISPVE_i": "1"
+  }
+}
